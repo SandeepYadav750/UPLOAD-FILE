@@ -12,6 +12,7 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
+  base: 'UPLOAD-FILE',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
