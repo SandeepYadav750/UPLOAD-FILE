@@ -6,7 +6,7 @@
                     <h2 class="text-2xl font-bold">Upload</h2>
                     <p class="text-gray-500">Add your Documents here, and you can upload up to 5 files max.</p>
                 </span>
-                <span><img src="../assets/cross.svg" alt="cancel" class="w-4" /></span>
+                <span><img src="../assets/cross.svg" alt="cancel" class="w-4 cursor-pointer " /></span>
             </div>
 
             <!-- Drag and Drop Area -->
@@ -29,8 +29,7 @@
                         Browse Files
                     </button>
                     <input v-model="websiteLink" type="url" placeholder="Enter website link"
-                        class="w-full sm:w-1/2 px-4 py-2 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg  focus:outline-none focus:ring focus:ring-blue-300"
-                        style="background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=\'16\' height=\'16\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3cg clip-path=\'url(%23clip1)\' fill=\'%23000\'%3e%3cpath d=\'M14.9 1.1a3.75 3.75 0 00-5.3 0L6.46 4.23a3.79 3.79 0 000 5.3c.23.24.49.42.76.58l.57-.57c.38-.38.24-.82.24-1.13a1.9 1.9 0 01-.24-2.85l3.13-3.14a1.88 1.88 0 012.66 2.66L11.5 7.15c.06.33.42 1.11.24 2.4l.03-.01L14.9 6.4a3.75 3.75 0 000-5.3z\'/%3e%3cpath d=\'M9.78 6.22a3.57 3.57 0 00-.76-.57l-.57.57c-.37.38-.24.82-.23 1.13a1.9 1.9 0 01.24 2.85c-.12.1-3.32 3.31-3.38 3.38a1.88 1.88 0 01-2.66-2.66l2.32-2.31c-.06-.33-.42-1.12-.24-2.41l-.02.02L1.1 9.6a3.75 3.75 0 005.3 5.3l3.38-3.38a3.78 3.78 0 000-5.3z\'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id=\'clip1\'%3e%3cpath fill=\'%23fff\' d=\'M0 0h16v16H0z\'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e');" />
+                        class="text-center w-full sm:w-1/2 px-4 py-2 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg  focus:outline-none focus:ring focus:ring-blue-300" />
                 </div>
             </div>
             <div v-if="errorPDF" class="text-red-500 mt-2 text-sm">{{ errorPDF }}</div>
